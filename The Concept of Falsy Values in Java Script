@@ -1,0 +1,30 @@
+In JavaScript a faly value is a value that translate the false evaluated in the context of boolean.
+There are seven considered as a falsy JavaScript includes:false,0,-0,BigInt zero,empty string or null,and Not-a-Number.This values are very important to understand the flow effect of control in logic expression or conditional statements,where they in considered as false.
+If falsy value are evaluated in a conditional statement,such as if statement it will cause the block of code.
+
+3 Examples of Falsy Values in JavaScript
+1. if (false) {
+       console.log("This won't run."):
+} else {
+       console.log("This will run."): 
+}
+     °The boolean value false is falsy.It uses conditional statement
+it can evaluate to false,meaning the codr block won't execute
+
+2. if (0) {
+       console.log("This won't run."):
+} else {
+       console.log("This will run."): 
+}
+     °Number 0 is considered as false in JavaScript.
+When O is in conditional context,it is treated as false.
+
+3. if ("") {
+       console.log("This won't run."):
+} else {
+       console.log("This will run."):
+}
+     °Emty string is also a falsy value in JavaScript.Emty string is 
+evaluated in conditional statement,that also consider as false.
+
+
