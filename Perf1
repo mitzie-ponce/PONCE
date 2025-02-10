@@ -1,0 +1,121 @@
+1.Var
+      it is a function-scoped that  has  early days in JavaScript.
+
+• the  var variables are inside in a function and fixed outside of the 
+
+function f() {
+
+    // can be accessible any
+    // within this function
+    var a = 30;
+    console.log(a)
+}
+f();
+
+// cannot be accessible
+// outside of function
+console.log(a);
+
+
+•The code below are re-declare  variable that some of name are same scope using the var keyword, which can provide no error in the case of var keyword
+
+var a = 30
+
+// User can re-declare
+// variable using var
+var a = 10
+
+// User can update var variable
+a = 9
+console.log(a);
+
+• The code below  explains the concept of hosting  with  var keyword variables
+
+console.log(a);
+var a = 30;
+
+2. Let
+     Let is a variable within the specific block of code.That can allow to assign value to variable that changed within the scope.
+
+• The below code declares the variable using the let keyword.
+
+let a = 30;
+function f() {
+    let b = 29
+    console.log(b);
+    console.log(a);
+}
+f();
+
+
+• The code below are  explains the block scope of the variables declared using the let keyword.
+
+let a = 31;
+function f() {
+    if (true) {
+        let b = 30
+
+        // prints 30
+        console.log(b);
+    }
+
+    // gives error 
+    // defined in if block
+    console.log(b);
+}
+f()
+
+// prints 31
+console.log(a)
+
+• The code below explains the behaviour of let variables when they are re-declared in the same scope
+
+let a = 30
+
+// not allowed
+let a = 30
+
+// allowed
+a = 30
+
+• The code below  explains the behaviour of let variables when they are re-declared in the different scopes
+
+let a = 30
+if (true) {
+    let a = 29
+    console.log(a) // prints 29
+}
+console.log(a) // prints 30
+
+•This code explains the use of the const keyword to declare the JavaScript objects
+
+3. Const
+     Const is also a specific block of code that  declare constants and cannot be reassigned after initialization.
+
+const a = {
+    prop1: 30,
+    prop2: 29
+}
+
+// allowed
+a.prop1 = 3
+
+// not allowed
+a = {
+    b: 30,
+    prop2: 29
+}
+
+• This code  change the value of the const variable.
+
+const a = 30;
+function f() {
+    a = 29
+    console.log(a)
+}
+f();
+
+Referencess
+https://www.geeksforgeeks.org
+https://medium.com
+https://en.wikipedia.org
